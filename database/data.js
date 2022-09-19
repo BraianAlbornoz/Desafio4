@@ -1,27 +1,3 @@
-const products = [
-  {
-    id: 1,
-    title: "Manzana",
-    price: 123.44,
-    thumbnail:
-      "https://elegifruta.com.ar/onepage/wp-content/uploads/2017/07/manzana_roja.jpg",
-  },
-  {
-    id: 2,
-    title: "Pera",
-    price: 221.14,
-    thumbnail:
-      "https://perfumesyfragancias.online/wp-content/uploads/2018/10/poire.jpg",
-  },
-  {
-    id: 3,
-    title: "Cambur",
-    price: 33.98,
-    thumbnail:
-      "https://wikidat.com/img/cambur-ff289f22159dbaeea6e8c88f3a4c94e5.jpg",
-  },
-];
-
 class Products {
   constructor() {
     this.products = products;
@@ -43,5 +19,31 @@ class Products {
     return this.products.filter((product) => product != id);
   }
 }
+
+const products = [
+  {
+    id: 1,
+    title: "Filtro Donaldson",
+    price: 100.00,
+    thumbnail:
+      "https://pldistribucion.com.ar/web/wp-content/uploads/p550020.700.700-600x600.jpg",
+  },
+  {
+    id: 2,
+    title: "Bateria Willard",
+    price: 200.00,
+    thumbnail:
+      "https://http2.mlstatic.com/D_NQ_NP_2X_761308-MLA43579791788_092020-F.webp",
+  },
+  {
+    id: 3,
+    title: "Filtro aceite WEGA",
+    price: 50.00,
+    thumbnail:
+      "https://http2.mlstatic.com/D_NQ_NP_662023-MLA45729223613_042021-O.webp",
+  },
+];
+
+
 
 module.exports = Products;

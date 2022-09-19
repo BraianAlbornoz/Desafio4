@@ -4,12 +4,10 @@ const apiRouters = require("./routers/app.routers");
 const app = express();
 const PORT = process.env.PORT || 8080;
 
-//Middlewares a nivel de aplicación
+//Middlewares
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-
 app.use("/api", apiRouters);
-
 app.use(express.static("public"));
 
 const connectedServer = app.listen(PORT, () => {
